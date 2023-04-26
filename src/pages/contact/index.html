@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+  <section class="contact-container max-center">
+    <div class="left-layout wow fadeInLeft">
+      <div class="title">Contact Us</div>
+      <div class="desc">Whenever you have questions, suggestions, or cooperate with us, you are welcome to reach out.</div>
+      <div class="subtitle">General Questions</div>
+      <div class="infos">
+      <p>Email:service@bluettipower.com</p>
+      <p>Customer Service: +1702-463-4792 or +1 833-737-1296</p>
+      <p>Monday to Friday 9am-5pm(PST)</p>
+      <p>Address: 6185 S Valley View Blvd Ste D.Las Vegas NV 89118</p>
+      <p>
+        <b>Orders&Shipping Support</b>
+        sale@bluttipower.com
+      </p>
+      <p>
+        <b>Sale-After Service Support</b>
+        service@bluettipower.com
+      </p>
+      <p>
+        <b>Wholesale,Distribute Or Dropshipping</b>
+        distributor@bluettipower.com
+      </p>
+      <p>
+        <b>Press,Marketing And Influencer Cooperation</b>
+        marketing@bluetti.com
+      </p>
+      </div>
+    </div>
+    <div class="right-layout wow fadeInRight">
+      <div class="title">Message</div>
+      <div class="infos">
+        <p>
+          <b>Facebook Group</b>
+          <br>
+          <span class="red">New release/promotion/technic discussion:</span><br>
+          https://www.facebook.com/groups/bluetti.club
+        </p>
+        <p>
+          <b>BLUETTI Forum</b>
+          <br>
+          https://community.bluetti.com/
+        </p>
+      </div>
+      <form action="" class="form">
+        <label for="" class="inp-box">
+          <p>YOUR NAME <i>*</i></p>
+          <input type="text" class="inp">
+        </label>
+        <label for="" class="inp-box">
+          <p>YOUR EMAIL <i>*</i></p>
+          <input type="text" class="inp">
+        </label>
+        <label for="" class="inp-box">
+          <p>PRODUCT SKU <i>*</i></p>
+          <input type="text" class="inp">
+        </label>
+        <label for="" class="inp-box">
+          <p>YOUR SN NO.</p>
+          <input type="text" class="inp">
+        </label>
+        <label for="" class="inp-box">
+          <p>YOUR PHONE <i>*</i></p>
+          <input type="text" class="inp">
+        </label>
+        <label for="" class="inp-box">
+          <p>REGION <i>*</i></p>
+          <input type="text" class="inp">
+        </label>
+        <label for="" class="inp-box w100">
+          <p>REGION <i>*</i></p>
+          <textarea name="" id="" ></textarea>
+        </label>
+        <button type="submit" class="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+  </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+    <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+  <script src="https://webapi.amap.com/maps?v=1.4.15&key=834f4ee19993e8a80593da88d8af4c66"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="swiper-container banner-swiper banner-container mb10 wow fadeInUp">
+      <ul class="swiper-wrapper banner-list">
+        <li class="swiper-slide banner-item">
+          <a href="">
+            <img src="/public/images/home/banner1.jpg" alt="">
+          </a>
+        </li>
+        <li class="swiper-slide banner-item">
+          <a href="">
+            <img src="/public/images/home/banner2.jpg" alt="">
+          </a>
+        </li>
+        <li class="swiper-slide banner-item">
+          <a href="">
+            <img src="/public/images/home/banner3.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </section>
+    <section class="product-container mb10">
+      <ul class="product-list">
+        <li class="product-item wow fadeInUp">
+          <a href="">
+            <img src="/public/images/home/product1.jpg" alt="">
+          </a>
+        </li>
+        <li class="product-item wow fadeInUp">
+          <a href="">
+            <img src="/public/images/home/product2.jpg" alt="">
+          </a>
+        </li>
+        <li class="product-item wow fadeInUp">
+          <a href="">
+            <img src="/public/images/home/product3.jpg" alt="">
+          </a>
+        </li>
+        <li class="product-item wow fadeInUp">
+          <a href="">
+            <img src="/public/images/home/product4.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <a href="" class="banner2-container mb10 wow fadeInUp">
+      <img src="/public/images/home/banner2-1.jpg" alt="">
+    </a>
+    <section class="product-container mb10">
+      <ul class="product-list">
+        <li class="product-item wow fadeInUp">
+          <a href="">
+            <img src="/public/images/home/t-pro-1.jpg" alt="">
+          </a>
+        </li>
+        <li class="product-item wow fadeInUp">
+          <a href="">
+            <img src="/public/images/home/t-pro-2.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="video-container mb10 wow fadeInUp">
+      <video class="video" src="/public/video/video.webm" controls></video>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+@import "~@/assets/global.less";
+.contact-container {
+  padding: 120px 0;
+  .flex(space-between);
+  .left-layout,
+  .right-layout {
+    width: calc(50% - 40px);
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 35px;
+    font-family: "montserrat";
+  }
+  .infos {
+    p {
+      margin-bottom: 15px;
+      font-size: 15px;
+      line-height: 1.7;
+      b {
+        display: block;
+      }
+    }
+    .red {
+      color: red;
+    }
+  }
+  .left-layout {
+    .desc {
+      margin-bottom: 25px;
+      color: #666;
+    }
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+  .right-layout {
+    .form {
+      margin-top: 30px;
+      .flex(space-between);
+      flex-wrap: wrap;
+      .inp-box {
+        width: calc(50% - 10px);
+        margin-bottom: 25px;
+        p {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+        input {
+          width: 100%;
+          height: 32px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding-left: 10px;
+          box-sizing: border-box;
+          outline: none;
+        }
+        &.w100 {
+          width: 100%;
+        }
+        textarea {
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          width: 100%;
+          height: 150px;
+          padding-left: 10px;
+          box-sizing: border-box;
+          padding-top: 10px;
+          outline: none;
+          font-family: "PingFang SC", Arial, "Microsoft YaHei", sans-serif;
+        }
+      }
+      .submit {
+        width: 180px;
+        height: 48px;
+        background-color: @mainColor;
+        color: #fff;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background-color: fade(@mainColor, 90%);
+        }
+      }
+    }
+  }
+}
+
+@import "./768.less" screen and (max-width: 768px);

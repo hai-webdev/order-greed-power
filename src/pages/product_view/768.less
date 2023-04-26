@@ -1,0 +1,112 @@
+.head-product-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .flex();
+    flex-wrap: wrap;
+    .left-layout,
+    .right-layout {
+      width: 100%;
+    }
+    .left-layout {
+      padding: 0;
+      margin-bottom: 30px;
+      .product-bottom {
+        margin-top: 30px;
+        position: relative;
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: #666;
+          &::after {
+            font-size: 20px;
+          }
+        }
+        .swiper-button-prev{
+            left: 0;
+        }
+        .swiper-button-next{
+            right: 0;
+        }
+        .thumb-swiper {
+          width: calc(100% - 60px);
+          .thumb-item {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-sizing: border-box;
+            cursor: pointer;
+          }
+          .swiper-slide-thumb-active {
+            border-color: @mainColor;
+          }
+        }
+      }
+    }
+    .right-layout {
+      .title {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .hr {
+        height: 1px;
+        width: 100%;
+        background-color: #ddd;
+        margin-bottom: 15px;
+      }
+
+      .btns {
+        .flex();
+        .btn {
+          color: #000;
+          width: 140px;
+          height: 36px;
+          line-height: 36px;
+          font-size: 14px;
+          border-radius: 30px;
+          .flex(center,center);
+          &:first-child {
+            margin-right: 10px;
+          }
+          &:hover,
+          &.on {
+            background-color: @mainColor;
+            color: #fff;
+            border-color: @mainColor;
+          }
+        }
+      }
+    }
+  }
+  .content-container {
+    background-color: #f7f7f7;
+    &.max-center{
+      margin: 0 auto 80px;
+    }
+    .tab-list {
+      .flex();
+      border-bottom: 1px solid #ccc;
+      .tab-item {
+        flex: 1;
+        height: 36px;
+        font-size: 12px;
+        cursor: pointer;
+        .flex(center,center);
+        &.on,
+        &:hover {
+          background-color: @mainColor;
+          color: #fff;
+        }
+      }
+    }
+    .cont-list {
+      .cont-item {
+        display: none;
+        .content {
+          padding: 15px;
+          box-sizing: border-box;
+        }
+        &.on {
+          display: block;
+        }
+      }
+    }
+  }

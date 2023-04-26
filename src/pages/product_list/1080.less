@@ -1,0 +1,27 @@
+.main-container {
+  .product-list {
+    .flex();
+    flex-wrap: wrap;
+    .product-item {
+      width: calc((100% - 12px) / 2);
+      &:nth-child(4n + 1) {
+        margin-left: 6px;
+      }
+      &:nth-child(4n + 4) {
+        margin-right: 6px;
+      }
+      &:nth-child(3n + 1) {
+        margin-left: 6px;
+      }
+      &:nth-child(3n + 3) {
+        margin-right: 6px;
+      }
+      &:nth-child(2n + 1) {
+        margin-left: 0;
+      }
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+    }
+  }
+}

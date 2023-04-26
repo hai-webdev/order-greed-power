@@ -1,0 +1,110 @@
+@import "~@/assets/global.less";
+.pc-header.header-container {
+  position: relative;
+  z-index: 999;
+  .head-box {
+    height: 90px;
+    .flex(space-between,center);
+    .logo {
+      height: 54px;
+      display: block;
+      img {
+        display: block;
+        height: 54px;
+      }
+    }
+    .right-layout {
+      .flex(flex-start,center);
+      .nav-list {
+        .flex();
+        .nav-item {
+          padding: 0 30px;
+          font-weight: bold;
+          color: #666;
+          position: relative;
+          & > a {
+            line-height: 90px;
+            height: 90px;
+          }
+          &:hover,
+          &.on {
+            & > a {
+              color: @mainColor;
+            }
+          }
+          .nav-sublist {
+            position: absolute;
+            display: none;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #fff;
+            .nav-subitem {
+              line-height: 32px;
+              height: 32px;
+              font-size: 14px;
+              text-align: center;
+              a {
+                font-weight: 400;
+                white-space: nowrap;
+              }
+              &:hover {
+                a {
+                  color: @mainColor;
+                }
+              }
+            }
+          }
+          &:hover {
+            .nav-sublist {
+              display: block;
+            }
+          }
+        }
+      }
+      .contact-list {
+        margin-left: 80px;
+        .flex();
+        .contact-item {
+          position: relative;
+          margin-right: 20px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            img {
+              width: 28px;
+            }
+          }
+          .text {
+            display: none;
+            border-radius: 8px;
+            padding: 10px;
+            width: 180px;
+            left: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: translateX(-50%);
+            position: absolute;
+            background-color: #fff;
+            font-size: 14px;
+            p {
+              margin-bottom: 5px;
+            }
+          }
+          &:hover {
+            .text {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.m-header.header-container {
+  display: none;
+}
+@import "./1280.less" screen and (max-width: 1280px);
+@import "./1080.less" screen and (max-width: 1080px);
+@import "./768.less" screen and (max-width: 768px);

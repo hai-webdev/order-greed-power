@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "poppins";
+    src: url("/public/fonts/poppins/poppins-regular.eot"); /* IE9 Compat Modes */
+    src: url("/public/fonts/poppins/poppins-regular.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("/public/fonts/poppins/poppins-regular.woff2") format("woff2"),
+      /* Super Modern Browsers */ url("/public/fonts/poppins/poppins-regular.woff") format("woff"),
+      /* Pretty Modern Browsers */ url("/public/fonts/poppins/poppins-regular.ttf") format("truetype"),
+      /* Safari, Android, iOS */ url("/public/fonts/poppins/poppins-regular.svg#svgFontName") format("svg"); /* Legacy iOS */
+  }
+@font-face {
+    font-family: "montserrat";
+    src: url("/public/fonts/montserrat/montserrat-bold.eot"); /* IE9 Compat Modes */
+    src: url("/public/fonts/montserrat/montserrat-bold.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("/public/fonts/montserrat/montserrat-bold.woff2") format("woff2"),
+      /* Super Modern Browsers */ url("/public/fonts/montserrat/montserrat-bold.woff") format("woff"),
+      /* Pretty Modern Browsers */ url("/public/fonts/montserrat/montserrat-bold.ttf") format("truetype"),
+      /* Safari, Android, iOS */ url("/public/fonts/montserrat/montserrat-bold.svg#svgFontName") format("svg"); /* Legacy iOS */
+  }

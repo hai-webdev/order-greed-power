@@ -1,0 +1,47 @@
+.main-container {
+  padding: 50px 0;
+  .page-title {
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  .main-box {
+    .flex();
+    .nav-list {
+      width: 200px;
+      .nav-item {
+        width: 100%;
+        display: block;
+        height: 48px;
+        line-height: 48px;
+        font-size: 15px;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        padding-left: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:hover,
+        &.on {
+          color: #fff;
+          background-color: @mainColor;
+          border-color: @mainColor;
+        }
+      }
+    }
+    .faq-list {
+      width: calc(100% - 200px);
+      padding-left: 35px;
+      box-sizing: border-box;
+      .faq-item {
+        border-bottom: 2px solid #ccc;
+        .q {
+          padding: 15px 0;
+          font-size: 16px;
+        }
+        .cont {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
